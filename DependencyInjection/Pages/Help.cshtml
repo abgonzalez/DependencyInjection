@@ -1,0 +1,69 @@
+﻿@page
+@model HelpModel
+@{
+    ViewData["Title"] = "Dependency Injecion explanation";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <strong>Transient</strong> objects are always different; a new instance is provided to every controller and every service.
+        </li>
+        <li class="list-group-item">
+            <strong>Scoped</strong> objects are the same within a request, but different across different requests.For example, in a web application it creates 1 instance per each http request but uses the same instance in the other calls within that same web request..
+        </li>
+        <li class="list-group-item">
+            <strong>Singleton</strong> objects are the same for every object and every request
+        </li>
+    </ul>
+    Further details in this link <a href="https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences">https://stackoverflow.com/questions/38138100/addtransient-addscoped-and-addsingleton-services-differences</a>
+</p>
+<p>
+    Observe which of the OperationId values varies within a request, and between requests.
+
+    Transient objects are always different; a new instance is provided to every controller and every service.
+
+    Scoped objects are the same within a request, but different across different requests
+
+    Singleton objects are the same for every object and every request (regardless of whether an instance is provided in ConfigureServices)
+</p>
+<h3> Application</h3>
+<ul class="list-group">
+    <li class="list-group-item">
+        <strong>Transient</strong>
+        <br />
+        <ul>
+            <li>since they are created every time they will use <strong>more memory</strong> &amp; Resources and can have the negative impact on performance</li>
+            <li>use this for the <strong>lightweight</strong> service with little or <strong>no state</strong>.</li>
+        </ul>
+    </li>
+    <li class="list-group-item">
+        <strong>Scoped</strong>
+        <br />
+        <ul>
+            <li>Better option when you want to maintain state within a request.</li>
+        </ul>
+    </li>
+    <li class="list-group-item">
+        <strong>Singleton</strong>
+        <br />
+        <ul>
+            <li>memory leaks in these services will build up over time.</li>
+            <li>also memory efficient as they are created once reused everywhere.</li>
+        </ul>
+        <span>
+            Use Singletons where you need to maintain application wide state. Application configuration or parameters, Logging Service, caching of data is some of the examples where you can use singletons
+        </span>
+    </li>
+
+    <li class="list-group-item">
+        <strong>Injecting service with different lifetimes into another</strong>
+        <br />
+        <ol>
+            <li><strong>Never inject Scoped &amp; Transient services into Singleton service.</strong> ( This effectively converts the transient or scoped service into the singleton.)</li>
+            <li><strong>Never inject Transient services into scoped service</strong> ( This converts the transient service into the scoped. )</li>
+        </ol>
+    </li>
+
+</ul>

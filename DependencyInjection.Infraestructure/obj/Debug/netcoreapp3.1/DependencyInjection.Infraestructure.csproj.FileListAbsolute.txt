@@ -1,0 +1,9 @@
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\bin\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.deps.json
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\bin\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.dll
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\bin\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.pdb
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.csprojAssemblyReference.cache
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.AssemblyInfoInputs.cache
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.AssemblyInfo.cs
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.dll
+C:\Personal\AspNetCore\DependencyInjection\DependencyInjection\DependencyInjection.Infraestructure\obj\Debug\netcoreapp3.1\DependencyInjection.Infraestructure.pdb

@@ -1,0 +1,32 @@
+﻿@page 
+@model DependencyInjection.Pages.Operation.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<form method="get"  >
+    <h1>LifeTimes</h1>
+    <h3 class="text-right text-warning">
+        Request N: @Model.Count
+    </h3>
+
+        <h2>Controller Operations</h2>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Transient : <span> @Model._transientOperation.OperationId </span> </li>
+                <li class="list-group-item">Scoped <span> @Model._scopedOperation.OperationId </span> </li>
+                <li class="list-group-item">Singleton <span> @Model._singletonOperation.OperationId </span> </li>
+                <li class="list-group-item">Instance <span> @Model._singletonInstanceOperation.OperationId </span> </li>
+            </ul>
+        </div>
+        <h2>OperationService Operations</h2>
+        <div>
+            <ul class="list-group">
+                <li class="list-group-item">Transient : <span> @Model._operationService.TransientOperation.OperationId</span> </li>
+                <li class="list-group-item">Scoped <span> @Model._operationService.ScopedOperation.OperationId</span> </li>
+                <li class="list-group-item">Singleton <span> @Model._operationService.SingletonOperation.OperationId </span> </li>
+                <li class="list-group-item">Instance <span> @Model._operationService.SingletonInstanceOperation.OperationId </span> </li>
+            </ul>
+        </div>
+        <button type="submit" class="btn btn-primary">Refresh</button>
+</form>
